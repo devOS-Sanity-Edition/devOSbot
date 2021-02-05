@@ -4,3 +4,4 @@ dev/hiitsdevin/devOSbot/FileUtil.java
  dev.hiitsdevin.devOSbot.FileUtil
 dev/hiitsdevin/devOSbot/Main.java
  dev.hiitsdevin.devOSbot.Main
+ dev.hiitsdevin.devOSbot.Main$1
