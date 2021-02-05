@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+}
+
+group 'dev.hiitsdevin'
+version '1.0.0'
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    compile 'net.dv8tion:JDA:4.2.0_227'
+    compile group: 'org.yaml', name: 'snakeyaml', version: '1.25'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+task executableJar(type: Jar) {
+    manifest {
+        attributes 'Main-Class': 'dev.hiitsdevin.devOSbot.Main'
+    }
+
+    baseName = project.name + '-all'
+    from { configurations.compile.findAll { !it.name.endsWith('pom') }.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+}

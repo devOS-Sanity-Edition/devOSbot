@@ -1,0 +1,6 @@
+dev/hiitsdevin/devOSbot/Config.java
+ dev.hiitsdevin.devOSbot.Config
+dev/hiitsdevin/devOSbot/FileUtil.java
+ dev.hiitsdevin.devOSbot.FileUtil
+dev/hiitsdevin/devOSbot/Main.java
+ dev.hiitsdevin.devOSbot.Main
