@@ -2,6 +2,9 @@ dev/hiitsdevin/devOSbot/Config.java
  dev.hiitsdevin.devOSbot.Config
 dev/hiitsdevin/devOSbot/FileUtil.java
  dev.hiitsdevin.devOSbot.FileUtil
+dev/hiitsdevin/devOSbot/MyListener.java
+ dev.hiitsdevin.devOSbot.MyListener
 dev/hiitsdevin/devOSbot/Main.java
  dev.hiitsdevin.devOSbot.Main
  dev.hiitsdevin.devOSbot.Main$1
+ dev.hiitsdevin.devOSbot.Main$MyListener
