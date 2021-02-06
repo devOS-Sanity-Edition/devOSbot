@@ -1,10 +1,24 @@
-dev/hiitsdevin/devOSbot/Config.java
- dev.hiitsdevin.devOSbot.Config
 dev/hiitsdevin/devOSbot/FileUtil.java
  dev.hiitsdevin.devOSbot.FileUtil
-dev/hiitsdevin/devOSbot/MyListener.java
- dev.hiitsdevin.devOSbot.MyListener
+dev/hiitsdevin/devOSbot/commands/CommandCategory.java
+ dev.hiitsdevin.devOSbot.commands.CommandCategory
+dev/hiitsdevin/devOSbot/commands/BaseCommand.java
+ dev.hiitsdevin.devOSbot.commands.BaseCommand
+dev/hiitsdevin/devOSbot/commands/CommandContext.java
+ dev.hiitsdevin.devOSbot.commands.CommandContext
+dev/hiitsdevin/devOSbot/Config.java
+ dev.hiitsdevin.devOSbot.Config
+dev/hiitsdevin/devOSbot/commands/CommandManager.java
+ dev.hiitsdevin.devOSbot.commands.CommandManager
+dev/hiitsdevin/devOSbot/Colors.java
+ dev.hiitsdevin.devOSbot.Colors
+dev/hiitsdevin/devOSbot/commands/fun/Hello.java
+ dev.hiitsdevin.devOSbot.commands.fun.Hello
+dev/hiitsdevin/devOSbot/commands/fun/Ping.java
+ dev.hiitsdevin.devOSbot.commands.fun.Ping
+dev/hiitsdevin/devOSbot/commands/fun/Shutdown.java
+ dev.hiitsdevin.devOSbot.commands.fun.Shutdown
+dev/hiitsdevin/devOSbot/commands/fun/About.java
+ dev.hiitsdevin.devOSbot.commands.fun.About
 dev/hiitsdevin/devOSbot/Main.java
  dev.hiitsdevin.devOSbot.Main
- dev.hiitsdevin.devOSbot.Main$1
- dev.hiitsdevin.devOSbot.Main$MyListener
