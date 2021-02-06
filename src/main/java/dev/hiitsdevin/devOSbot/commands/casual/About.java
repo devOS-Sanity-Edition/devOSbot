@@ -1,4 +1,4 @@
-package dev.hiitsdevin.devOSbot.commands.fun;
+package dev.hiitsdevin.devOSbot.commands.casual;
 
 import dev.hiitsdevin.devOSbot.Colors;
 import dev.hiitsdevin.devOSbot.Main;
@@ -8,7 +8,6 @@ import dev.hiitsdevin.devOSbot.commands.CommandContext;
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.entities.MessageChannel;
 
-import java.awt.*;
 import java.util.List;
 
 public class About extends BaseCommand {

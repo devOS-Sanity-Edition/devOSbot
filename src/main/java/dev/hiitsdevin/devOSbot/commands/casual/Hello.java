@@ -1,4 +1,4 @@
-package dev.hiitsdevin.devOSbot.commands.fun;
+package dev.hiitsdevin.devOSbot.commands.casual;
 
 import dev.hiitsdevin.devOSbot.Colors;
 import dev.hiitsdevin.devOSbot.Main;
@@ -11,24 +11,20 @@ import net.dv8tion.jda.api.entities.MessageChannel;
 import java.awt.*;
 import java.util.List;
 
-public class Shutdown extends BaseCommand {
-    public Shutdown() {
-        super("shutdown", CommandCategory.BOT);
+public class Hello extends BaseCommand {
+    public Hello() {
+        super("hello", CommandCategory.CASUAL);
     }
 
     @Override
-    public void run(CommandContext ctx, List<String> args) throws InterruptedException {
+    public void run(CommandContext ctx, List<String> args) {
         EmbedBuilder eb = new EmbedBuilder();
-        eb.setFooter("devOS: Sanity Edition | Bot");
-        eb.setTitle("Shutting down bot.");
-        eb.setColor(Main.color.critical);
+        eb.setFooter("devOS: Sanity Edition | Casual");
+        eb.setTitle("Hello!");
+        eb.setDescription("I am the devOS bot, your local, devOS only friend! Don't hurt me please!");
+        eb.setColor(Main.color.general);
 
         MessageChannel channel = ctx.message.getChannel();
         channel.sendMessage(eb.build()).queue();
-
-        Thread.sleep(500);
-
-        Main.jdaInstance.shutdown();
-        System.exit(0);
     }
 }

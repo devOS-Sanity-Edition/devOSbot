@@ -1,10 +1,11 @@
 package dev.hiitsdevin.devOSbot;
 
 import dev.hiitsdevin.devOSbot.commands.CommandManager;
-import dev.hiitsdevin.devOSbot.commands.fun.About;
-import dev.hiitsdevin.devOSbot.commands.fun.Hello;
-import dev.hiitsdevin.devOSbot.commands.fun.Ping;
-import dev.hiitsdevin.devOSbot.commands.fun.Shutdown;
+import dev.hiitsdevin.devOSbot.commands.bot.Shutdown;
+import dev.hiitsdevin.devOSbot.commands.casual.About;
+import dev.hiitsdevin.devOSbot.commands.casual.Hello;
+import dev.hiitsdevin.devOSbot.commands.casual.Help;
+import dev.hiitsdevin.devOSbot.commands.fun.*;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.entities.Activity;
@@ -13,8 +14,6 @@ import net.dv8tion.jda.api.events.ReadyEvent;
 import org.yaml.snakeyaml.Yaml;
 
 import javax.security.auth.login.LoginException;
-import java.awt.*;
-import java.io.ObjectInputFilter;
 
 public class Main {
     private static final Yaml yaml = new Yaml();
@@ -34,9 +33,10 @@ public class Main {
                 .addEventListeners(new CommandManager())
                 .setActivity(Activity.watching("devOS live... barely."));
 
-        new Ping();
-        new Hello();
         new About();
+        new Hello();
+        new Help();
+        new Ping();
         new Shutdown();
 
         jdaInstance = builder.build();

@@ -8,17 +8,19 @@ dev/hiitsdevin/devOSbot/commands/CommandContext.java
  dev.hiitsdevin.devOSbot.commands.CommandContext
 dev/hiitsdevin/devOSbot/Config.java
  dev.hiitsdevin.devOSbot.Config
-dev/hiitsdevin/devOSbot/commands/CommandManager.java
- dev.hiitsdevin.devOSbot.commands.CommandManager
 dev/hiitsdevin/devOSbot/Colors.java
  dev.hiitsdevin.devOSbot.Colors
-dev/hiitsdevin/devOSbot/commands/fun/Hello.java
- dev.hiitsdevin.devOSbot.commands.fun.Hello
+dev/hiitsdevin/devOSbot/commands/casual/Help.java
+ dev.hiitsdevin.devOSbot.commands.casual.Help
+dev/hiitsdevin/devOSbot/commands/casual/Hello.java
+ dev.hiitsdevin.devOSbot.commands.casual.Hello
 dev/hiitsdevin/devOSbot/commands/fun/Ping.java
  dev.hiitsdevin.devOSbot.commands.fun.Ping
-dev/hiitsdevin/devOSbot/commands/fun/Shutdown.java
- dev.hiitsdevin.devOSbot.commands.fun.Shutdown
-dev/hiitsdevin/devOSbot/commands/fun/About.java
- dev.hiitsdevin.devOSbot.commands.fun.About
+dev/hiitsdevin/devOSbot/commands/bot/Shutdown.java
+ dev.hiitsdevin.devOSbot.commands.bot.Shutdown
+dev/hiitsdevin/devOSbot/commands/CommandManager.java
+ dev.hiitsdevin.devOSbot.commands.CommandManager
+dev/hiitsdevin/devOSbot/commands/casual/About.java
+ dev.hiitsdevin.devOSbot.commands.casual.About
 dev/hiitsdevin/devOSbot/Main.java
  dev.hiitsdevin.devOSbot.Main
