@@ -8,6 +8,7 @@ public abstract class BaseCommand {
     public String label;
     public CommandCategory category;
     public ArrayList<String> aliases;
+    public ArrayList<Long> authorizedRoleIds;
 
     public BaseCommand(String label, CommandCategory category, String... aliases) {
         this.label = label;
