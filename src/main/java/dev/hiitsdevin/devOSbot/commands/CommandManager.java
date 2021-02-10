@@ -1,7 +1,6 @@
 package dev.hiitsdevin.devOSbot.commands;
 
 import dev.hiitsdevin.devOSbot.Main;
-import net.dv8tion.jda.api.entities.Role;
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 import net.dv8tion.jda.api.entities.Message;
@@ -30,17 +29,6 @@ public class CommandManager extends ListenerAdapter {
         else return;
 
         if (cmd == null) return;
-
-        boolean hasAuthorizedRole = false;
-
-        for (Role memberRole : msg.getMember().getRoles())
-            if (cmd.authorizedRoleIds.contains(memberRole.getIdLong()))
-                hasAuthorizedRole = true;
-
-        if (!hasAuthorizedRole) {
-            msg.getChannel().sendMessage("Unauthorized").queue();
-            return;
-        }
 
         CommandContext ctx = new CommandContext();
         ctx.message = msg;
